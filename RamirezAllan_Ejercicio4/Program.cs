@@ -154,3 +154,6 @@ if (persistencia == "S")
         }
     }
 }
+Console.WriteLine();
+Console.WriteLine($"Severidad del incidente: {severidad}");
+Console.WriteLine($"Respuesta recomendada: {respuesta}");
