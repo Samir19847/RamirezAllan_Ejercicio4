@@ -29,23 +29,70 @@ string respuesta = "";
 switch (incidente)
 {
     case 1:
+        switch (archivo)
         {
-
+            case 1:
+            respuesta= "Ejecutar antivirus en PC";
+                break;
+            case 2:
+                respuesta = "Aislar servidor y reinstalar"; 
+                break;
+            case 3: 
+                respuesta = "Revisar integridad de base de datos"; 
+                break;
+            case 4: respuesta = "Monitorear tráfico de red"; 
+                break;
         }
         break;
     case 2:
+        switch (archivo)
         {
-
+            case 1: 
+                respuesta = "Bloquear correos sospechosos"; 
+                break;
+            case 2: 
+                respuesta = "Revisar accesos al servidor"; 
+                break;
+            case 3:
+                respuesta = "Verificar credenciales en base de datos";
+                break;
+            case 4:
+                respuesta = "Filtrar tráfico en red";
+                break;
         }
         break;
         case 3:
+        switch (archivo)
         {
-
+            case 1:
+                respuesta = "Cambiar contraseñas en PC";
+                break;
+            case 2: 
+                respuesta = "Revisar logs del servidor"; 
+                break;
+            case 3:
+                respuesta = "Auditar accesos a base de datos";
+                break;
+            case 4:
+                respuesta = "Revisar firewalls";
+                break;
         }
         break;
-        case 4:
+    case 4:
+        switch (archivo)
         {
-
+            case 1:
+                respuesta = "Analizar origen de fuga en PC";
+                break;
+            case 2:
+                respuesta = "Aislar servidor comprometido";
+                break;
+            case 3: 
+                respuesta = "Revisar permisos en base de datos"; 
+                break;
+            case 4: 
+                respuesta = "Monitorear red y bloquear salida";
+                break;
         }
         break;
     default:
@@ -54,4 +101,5 @@ switch (incidente)
         }
         break;
 }
+
 
