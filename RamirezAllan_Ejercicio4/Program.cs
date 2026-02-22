@@ -1,4 +1,6 @@
-﻿Console.WriteLine("Ingrese el tipo de incidente");
+﻿using System.ComponentModel.Design;
+
+Console.WriteLine("Ingrese el tipo de incidente");
 Console.WriteLine("1. Malware");
 Console.WriteLine("2. Phishing");
 Console.WriteLine("3. Acceso no autorizado");
@@ -101,5 +103,54 @@ switch (incidente)
         }
         break;
 }
+if (datos == 4)
+{
+    severidad = "Crítica";
+}
+else if (datos == 3)
+{
+    severidad = "Alta";
+}
+else if (datos == 2)
+{
+    severidad = "Media";
+}
+else if (datos == 1)
+    {
+    severidad = "Baja";
+}
 
-
+if (usuarios>1000)
+{
+    severidad = "Crítica";    
+}
+else if (usuarios>500)
+{
+    severidad = "Alta";    
+}
+else if (usuarios>100)
+{
+    severidad = "Media";    
+}
+else if (usuarios>0)
+{
+    severidad = "Baja";
+}
+if (persistencia == "S")
+{
+    if (incidente == 1&&archivo==2)
+    {
+        severidad = "Crítica";
+    }
+    else
+    {
+        if (severidad == "Media") 
+        {
+            severidad = "Alta";
+        }
+        else if (severidad =="Akta")
+        {
+            severidad = "Crítica";
+        }
+    }
+}
