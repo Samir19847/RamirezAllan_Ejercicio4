@@ -26,5 +26,32 @@ Console.WriteLine("Núnero de usuarios afectados:");
 int usuarios = int.Parse(Console.ReadLine());
 string severidad = "Baja";
 string respuesta = "";
+switch (incidente)
+{
+    case 1:
+        {
 
+        }
+        break;
+    case 2:
+        {
+
+        }
+        break;
+        case 3:
+        {
+
+        }
+        break;
+        case 4:
+        {
+
+        }
+        break;
+    default:
+        {
+            Console.WriteLine("Opción de incidente no válida.");
+        }
+        break;
+}
 
